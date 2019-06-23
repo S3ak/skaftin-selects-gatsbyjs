@@ -31,7 +31,7 @@ intro:
         carefully put together to match your mood. Different genres of matching
         tempos and sounds are mashed up together. Experience the same playlist
         on the streaming platform of your choice.
-    - image: /img/coffee-gear.png
+    - image: /img/ss-music-box-logo.jpg
       text: >-
         A talk show where hosts team up with creatives from Cape Town.
         @theFruityguy, @palesa, @sungrizzle are joined by a local artist to
@@ -39,7 +39,7 @@ intro:
         creative in today's insta-kulture. This show is more geared to more of
         the mainstream with an even divide between local African acts and
         international acts. New episodes drop once a month.
-    - image: /img/tutorials.png
+    - image: /img/ss-music-box-logo.jpg
       text: >-
         Four 4 ‘masihlalisane’ will take you into people’s musical spaces as we
         share music and spread good vibes!!! Four4 karaoke has invited people
@@ -69,12 +69,12 @@ main:
     better.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: /img/ss-music-box-logo.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    image: /img/ss-music-box-logo.jpg
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
+    image: /img/ss-music-box-logo.jpg
 ---
 
