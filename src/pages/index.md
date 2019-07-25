@@ -17,11 +17,6 @@ mainpitch:
     believe that appreciating skill, originality and creativity we can find a
     delicate balance between what’s popular and the deep underground.
 
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
 intro:
   blurbs:
     - image: /img/ss-music-box-logo.jpg
@@ -44,13 +39,6 @@ intro:
         Four 4 ‘masihlalisane’ will take you into people’s musical spaces as we
         share music and spread good vibes!!! Four4 karaoke has invited people
         that love to sing, rap, and groove over their favourite tracks.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
   heading: Offerings to the ancestors
   description: |
     We have many ways to open your third eye
@@ -68,13 +56,13 @@ main:
     music as much as I do. It’s kind of like when we used to swap mixtapes - but
     better.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: skafitn selects image
     image: /img/ss-music-box-logo.jpg
   image2:
-    alt: A green cup of a coffee on a wooden table
+    alt: skafitn selects image
     image: /img/ss-music-box-logo.jpg
   image3:
-    alt: Coffee beans
+    alt: skafitn selects image
     image: /img/ss-music-box-logo.jpg
 ---
 
