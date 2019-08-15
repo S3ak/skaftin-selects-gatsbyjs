@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import './all.sass';
+import './Layout/layout.sass';
 import useSiteMetadata from './SiteMetadata';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <div className="l-layout">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -43,7 +44,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <div>{children}</div>
+      <div className="l-layout_body">{children}</div>
     </div>
   );
 };
