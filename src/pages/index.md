@@ -4,6 +4,7 @@ title: SKAFTIN SELECTS
 image: /img/cover.jpg
 heading: Coming soon, like now now!
 subheading: Collectively curating the culture
+file: /img/cover.jpg
 mainpitch:
   title: About Skaftin Selects
   description: >+

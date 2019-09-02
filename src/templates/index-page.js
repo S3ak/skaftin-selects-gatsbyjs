@@ -1,21 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import './landing-page/index.sass';
 
 import Layout from '../components/Layout';
-import HeroImage from '../components/HeroImage/index';
+import logo from '../img/ss-logo-text.svg';
 
 export const IndexPageTemplate = ({ heading, image, mainpitch }) => (
-  <section className="l-landing-page">
-    <div className="l-landing-page_hero">
-      <HeroImage image={image} />
-    </div>
+  <article className="l-landing-page">
+    <section className="l-landing-page_first-col">
+      <figure className="c-logo">
+        <img src={logo} alt="skaftin selects logo" />
+      </figure>
 
-    <h1 className="l-landing-page_title">{heading}</h1>
-    <p className="l-landing-page_description">{mainpitch.description}</p>
-  </section>
+      <div className="l-landing-page_hero"></div>
+    </section>
+
+    <section className="l-landing-page_second-col">
+      <div className="c-overlap">
+        <div className="c-VLine" />
+        <div className="c-subtext">Curating the culture collectively</div>
+
+        <div className="c-block">
+          <h1 className="c-title">
+            <span className="c-title_tiny-block">Website</span>
+            <span className="c-title_big-block">Coming</span>
+            <span className="c-title_huge-block">Soon</span>
+          </h1>
+        </div>
+        <div className="c-social-bar"></div>
+      </div>
+    </section>
+
+    <section className="l-landing-page_last-col"></section>
+  </article>
 );
 
 IndexPageTemplate.propTypes = {
@@ -50,13 +70,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         mainpitch {
           description
