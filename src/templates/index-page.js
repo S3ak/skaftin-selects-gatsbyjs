@@ -11,6 +11,7 @@ import logo from '../img/ss-logo-text.svg';
 export const IndexPageTemplate = ({ heading, image, mainpitch }) => (
   <article className="l-landing-page">
     <section className="l-landing-page_first-col">
+      <figure className="l-first-col_background"></figure>
       <figure className="c-logo">
         <img src={logo} alt="skaftin selects logo" />
       </figure>
