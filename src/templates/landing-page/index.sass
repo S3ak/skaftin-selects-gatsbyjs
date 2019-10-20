@@ -6,10 +6,9 @@
     background-color: var(--colours-black)
     color: var(--colours-white)
 
-    @mixin col 
-        height: 100%;
+    @mixin col
+        height: 100%
         background: var(--colours-black)
-    
 
     &_first-col
         @include col
@@ -32,7 +31,7 @@
         font-size: 72px
         flex: 0 0 100%
         text-align: center
-        
+
     &_description
         font-size: 14px
         flex: 0 1 100%
@@ -46,7 +45,6 @@
         position: absolute
         width: 100%
         height: 100%
-        background: red;
         display: flex
         flex-direction: column
 
@@ -56,13 +54,13 @@
         max-height: 85px
         width: 1px
         margin: 0 0 0 9px
-    
+
     .c-subtext
         min-width: 226px
         transform: rotate(90deg)
         transform-origin: left
-        position: relative;
-        left: 16px;
+        position: relative
+        left: 16px
 
     .c-block
         margin: 245px 0 0
@@ -87,30 +85,28 @@
         @media screen and (min-width: 1400px) 
             top: -124px
 
-
         @mixin block
             position: absolute
-            line-height: 1.2em;
+            line-height: 1.2em
             text-align: right
             text-shadow: -1px 2px 1px #000000
 
-            
         &_tiny-block
             @include block
             font-size: 7.2vw
-            right: 14vw;
+            right: 14vw
 
             @media screen and (min-width: 1400px) 
-                font-size: 100px
+                font-size: 97px
 
         &_big-block
             @include block
             top: -13%
             right: 13vw
             font-size: 22vw
-            
+
             @media screen and (min-width: 1400px) 
-                font-size: 160px
+                font-size: 292px
 
         &_huge-block
             @include block
@@ -119,8 +115,5 @@
             font-size: 22vw
 
             @media screen and (min-width: 1400px) 
-                    font-size: 160px
-
-        
-
-        
+                font-size: 197px
+                top: 264px

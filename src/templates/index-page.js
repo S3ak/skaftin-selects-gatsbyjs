@@ -1,12 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+// import Img from 'gatsby-image'
 
-import './landing-page/index.sass';
+// import bgImg from '../img/ss-bg-texture-portrait.svg'
 
-import Layout from '../components/Layout';
-import logo from '../img/ss-logo-text.svg';
+import './landing-page/index.sass'
+
+import Layout from '../components/Layout'
+import logo from '../img/ss-logo-text.svg'
 
 export const IndexPageTemplate = ({ heading, image, mainpitch }) => (
   <article className="l-landing-page">
@@ -37,7 +39,7 @@ export const IndexPageTemplate = ({ heading, image, mainpitch }) => (
 
     <section className="l-landing-page_last-col"></section>
   </article>
-);
+)
 
 IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
@@ -45,17 +47,17 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.shape({
     description: PropTypes.string
   })
-};
+}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <IndexPageTemplate {...frontmatter} />
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -63,9 +65,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object
     })
   })
-};
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -78,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
