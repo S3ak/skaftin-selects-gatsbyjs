@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import './all.sass';
-import './Layout/layout.sass';
-import useSiteMetadata from './SiteMetadata';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import './all.sass'
+import './Layout/layout.sass'
+import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description } = useSiteMetadata()
   return (
     <div className="l-layout">
       <Helmet>
@@ -46,11 +46,11 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div className="l-layout_body">{children}</div>
     </div>
-  );
-};
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.node
-};
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper
