@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm run build"
+  command = "npm run deploy"
   functions = "lambda"
 [build.environment]
   NPM_VERSION = "6.10.1"
