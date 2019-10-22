@@ -40,7 +40,8 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 ```
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
 $ cd [REPO_NAME]
-$ yarn
+$ npm install
+$ npm audit fix
 $ npm run start
 ```
 To test the CMS locally, you'll need run a production build of the site:
@@ -92,3 +93,12 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
+
+
+
+# Snippets
+
+# svg support
+  ```if (!childImageSharp && extension === 'svg') {
+    return <img style={imageStyle} src={publicURL} alt={alt} />
+  }```

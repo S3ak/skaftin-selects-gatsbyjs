@@ -1,5 +1,24 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+\:root
+  --colours-black: #000000;
+  --colours-white: #ffffff;
+  --colours-primary: #F5EB26; // Yellow
+  --colours-secondary: #E6559F; // light pink
+  --colours-danger: #000000;
+  --colours-text: #000000;
+  --colours-accent: #5EB26;
+  --colours-bg: #000000;
+  --size_l5: 155px
+  --size_l4 96px
+  --size_l3: 49px
+  --size_l2: 37px
+  --size_l1: 23px
+  --size_base: 14px
+  --size_s1: 9px
+  --size_s2: 5px
+  --size_s3: 3px
+
 // Config vars
 // Kaldi logo brand color: #981D56
 $kaldi-red: #F5EB26
@@ -10,23 +29,18 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
-.navbar .navbar-menu
-  box-shadow:none !important
+html, body, 
+  width: 100%
+  height: 100%
 
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+  & > div
+    width: 100%
+    height: 100%
+
+    & > div
+      width: 100%
+      height: 100%
+    
 
 // Helper Classes
 .full-width-image-container
@@ -92,35 +106,6 @@ $menu-item-active-color: $kaldi-red-invert
 $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
-
-
-.menu-label
-  font-size: 1em !important
-  text-align: left
-.menu-list
-  list-style: none !important
-  text-align: left
-.social
-  padding: 2em
-.social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
-
-// blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033;
-.blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
 
 
 @import "~bulma"
